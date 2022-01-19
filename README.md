@@ -1,12 +1,12 @@
 # MRI pre-processing
 
-This repository contains code to enable replication of the neuroimaging pre-processing methods used in Wood, David A., et al. "Accurate brain-age models for routine clinical MRI examinations." NeuroImage (2022): 118871. and Wood, David A., et al. "Deep learning models for triaging hospital head MRI examinations". Medical Image Analysis. 2022. (in press). The code requires the data to be in Nifti file format and makes heavy use of the Project Monai library (https://monai.io/).
+This repository contains code to enable replication of the neuroimaging pre-processing methods used in Wood, David A., et al. "Accurate brain-age models for routine clinical MRI examinations." NeuroImage (2022): 118871. and Wood, David A., et al. "Deep learning models for triaging hospital head MRI examinations". Medical Image Analysis. 2022. (in press). The code requires the data to be in Nifti file format and makes heavy use of the [Project Monai library](https://monai.io/).
 
 # Description
 
 Our axial MRI scan pre-processing pipeline is as follows:
 
-First, following conversion from DICOM to Nifti format (e.g., using code found [here] (https://github.com/rordenlab/dcm2niix)), we load each Nifti file.
+First, following conversion from DICOM to Nifti format (e.g., using [dcm2niix](https://github.com/rordenlab/dcm2niix)), we load each Nifti file.
 
 Next, because our scans came with a variety of slice thicknesses and spacings, we resample each scan to 1 mm^3 using bilinear interpolation.
 
@@ -24,7 +24,7 @@ training batch sizes and reduce training times.
 # Results
 
 The output for subject 21 in the open-source Information eXtraction from Images (IXI) is shown below (note to reproduce this figure requires downloading the 
-relevant Nifti file from https://brain-development.org/ixi-dataset/):
+relevant Nifti file from [here](https://brain-development.org/ixi-dataset/)):
 
 
 
