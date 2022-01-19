@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 from monai.config import print_config
 
 
-def preprocess(input_path, save_path, border=15):
+def preprocess(input_path, save_path, border=15, min_dim=130):
     arr, _ = LoadNifti()(input_path)
     shape = arr.shape
     arr = AddChannel()(arr)
