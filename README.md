@@ -1,6 +1,6 @@
 # MRI pre-processing
 
-This repository contains code to enable replication of the neuroimaging pre-processing methods used in Wood, David A., et al. "Accurate brain-age models for routine clinical MRI examinations." NeuroImage (2022): 118871. and Wood, David A., et al. "Deep learning models for triaging hospital head MRI examinations". Medical Image Analysis. 2022. (in press). The code requires the data to be in Nifti file format and makes heavy use of the [Project Monai library](https://monai.io/). Please see 'requirements.txt' for the exact library versions used.
+This repository contains code to enable replication of the neuroimaging pre-processing methods used in Wood, David A., et al. "Accurate brain-age models for routine clinical MRI examinations." NeuroImage (2022): 118871. and Wood, David A., et al. "Deep learning models for triaging hospital head MRI examinations". Medical Image Analysis. 2022. (in press). The code requires the data to be in Nifti file format and makes heavy use of the [Project Monai library](https://monai.io/). 
 
 # Description
 
@@ -35,6 +35,10 @@ To run our pre-processing pipeline on a locally stored Nifti file, simply run th
 `python run.py input_path save_path`
 
 This will load a raw scan located at 'input_path' and save a resampled, resized Nifti file at 'save_path', optionally saving a png image similar to the one shown above.
+
+This repository is compatible with python 3.6. See requirements.txt for all prerequisites; you can also install them using the following command:
+
+`pip install -r requirements.txt'
 
 
 
