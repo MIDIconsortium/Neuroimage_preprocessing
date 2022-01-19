@@ -34,7 +34,7 @@ To run our pre-processing pipeline on a locally stored Nifti file, simply run th
 
 `python run.py input_path save_path`
 
-This will save a resampled, resized Nifti file at 'save_path' and optionally save a png image similar to the one shown above.
+This will load a raw scan located at 'input_path' and save a resampled, resized Nifti file at 'save_path', optionally saving a png image similar to the one shown above.
 
 
 
