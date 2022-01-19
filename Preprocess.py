@@ -37,8 +37,8 @@ def preprocess(input_path, save_path, border=15, min_dim=130):
             a -= border
         else:
             a = 0
-        if b > boreder:
-            b -= boreder
+        if b > border:
+            b -= border
         else:
             b = 0
         if b1 > border:
