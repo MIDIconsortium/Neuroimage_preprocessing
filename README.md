@@ -6,7 +6,7 @@ This repository contains code to enable replication of the neuroimaging pre-proc
 
 Our axial MRI scan pre-processing pipeline is as follows:
 
-First, following conversion from DICOM to Nifti format (e.g., using https://github.com/rordenlab/dcm2niix), we load each Nifti file.
+First, following conversion from DICOM to Nifti format (e.g., using code found [here] (https://github.com/rordenlab/dcm2niix)), we load each Nifti file.
 
 Next, because our scans came with a variety of slice thicknesses and spacings, we resample each scan to 1 mm^3 using bilinear interpolation.
 
