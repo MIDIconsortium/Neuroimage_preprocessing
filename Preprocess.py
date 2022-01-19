@@ -1,10 +1,6 @@
-import os
-import pandas as pd
 import numpy as np
 import nibabel as nib
 import monai
-from IPython.display import clear_output
-from monai.data import CacheDataset, DataLoader, NiftiDataset
 from monai.transforms import (
     AddChannel, 
     Resize, 
@@ -15,9 +11,7 @@ from monai.transforms import (
     Spacing,
     ResizeWithPadOrCrop
 )
-from matplotlib.pyplot import cm
 import matplotlib.pyplot as plt
-from monai.config import print_config
 
 
 def preprocess(input_path, save_path, border=15, min_dim=130, plot=True):
