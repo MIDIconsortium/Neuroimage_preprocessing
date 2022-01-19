@@ -12,9 +12,9 @@ Next, because our raw axial scans come with a variety of slice thicknesses and s
 
 Next, because CNNs require a fixed-size array as input, whereas the field of view of our
 scans could vary, we crop or pad our resampled scans to 180 mm x 180 mm x 180
-mm (this size was chosen to ensure that no part of the head was cropped). Note that because a few scans (~1-2%) appeared significantly ‘off-centre’ in the x
+mm (this size was chosen to ensure that no part of the head was cropped). Note that because scans can appear significantly ‘off-centre’ in the x
 and y directions, we first determine approximately where the middle of the head
-was in the x and y directions using a simple ‘mask + argmax’ procedure, and then use this
+is in the x and y directions using a simple ‘mask + argmax’ procedure, and then use this
 point as the centre around which we cropped/padded to 180 mm x 180 mm x 180 mm.
 
 Finally, we down-sample this 3D array of shape 180 x 180 x 180 to a final 3D array of
@@ -25,8 +25,6 @@ training batch sizes and reduce training times.
 
 The output for subject 21 in the open-source Information eXtraction from Images (IXI) is shown below (note to reproduce this figure requires that the user downloads the 
 relevant Nifti files available [here](https://brain-development.org/ixi-dataset/)):
-
-
 
 ![IXI_21_final_again](https://user-images.githubusercontent.com/67752614/150041586-393994fb-52df-4eca-9600-775809932a03.png)
 
