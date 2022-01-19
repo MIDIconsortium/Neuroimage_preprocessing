@@ -32,6 +32,12 @@ relevant Nifti file from [here](https://brain-development.org/ixi-dataset/)):
 
 # Usage
 
+To run our pre-processing pipeline on a locally stored Nifti file, simply run the following command:
+
+`python run.py input_path save_path`
+
+
+
 
 
 
