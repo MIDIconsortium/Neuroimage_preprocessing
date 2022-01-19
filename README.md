@@ -38,7 +38,7 @@ This will load a raw scan located at 'input_path' and save a resampled, resized 
 
 This repository is compatible with python 3.6. See requirements.txt for all prerequisites; you can also install them using the following command:
 
-`pip install -r requirements.txt'
+`pip install -r requirements.txt`
 
 
 
