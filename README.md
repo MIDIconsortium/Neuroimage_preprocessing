@@ -8,7 +8,7 @@ Our axial MRI scan pre-processing pipeline is as follows:
 
 First, following conversion from DICOM to Nifti format (e.g., using [dcm2niix](https://github.com/rordenlab/dcm2niix)), we load each Nifti file.
 
-Next, because our scans came with a variety of slice thicknesses and spacings, we resample each scan to 1 mm^3 using bilinear interpolation.
+Next, because our raw axial scans come with a variety of slice thicknesses and spacings, we resample each scan to 1 mm^3 using bilinear interpolation.
 
 Next, because CNNs require a fixed-size array as input, whereas the field of view of our
 scans could vary, we crop or pad our resampled scans to 180 mm x 180 mm x 180
