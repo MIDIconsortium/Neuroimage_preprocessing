@@ -23,8 +23,8 @@ training batch sizes and reduce training times.
 
 # Results
 
-The output for subject 21 in the open-source Information eXtraction from Images (IXI) is shown below (note to reproduce this figure requires downloading the 
-relevant Nifti file from [here](https://brain-development.org/ixi-dataset/)):
+The output for subject 21 in the open-source Information eXtraction from Images (IXI) is shown below (note to reproduce this figure requires that the user downloads the 
+relevant Nifti files available [here](https://brain-development.org/ixi-dataset/)):
 
 
 
